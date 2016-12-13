@@ -1,0 +1,883 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Gent Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,700,400italic,500%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/nlform.css" />
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+
+
+        <div class="nav-container">
+            <nav class="nav-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="index.html" class="home-link">
+                                <img alt="Logo" class="logo" src="img/logo-square-light.png">
+                            </a>
+                            <ul class="menu">
+                                <li><a href="index/">Home</a></li>
+                                <li><a href="looks/">Looks</a></li>
+                                <li><a href="blog/">Style Blog</a></li>
+                                <li><a href="about/">About Us</a></li>
+                                <a class="btn btn-filled" href="quote-form.html" target="default" style="font-size:14px; margin-left:20px;">Login</a>
+                            </ul>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="icon social_instagram"></i></a></li>
+                                <li><a href="http://facebook.com/" target="_blank"><i class="icon social_facebook"></i></a></li>
+                            </ul>
+
+                        </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+
+                <div class="mobile-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main-container">
+
+            <section class="large-image overlay header" style="min-height:100vh; background-image:url('img/header-bg.jpg'); background-size:cover; background-position:center;">
+
+                <div class="container" style="margin-top:15vh;">
+                    <div class="row">
+                        <div class="col-sm-12 text-center text-white">
+                            <h1 class="text-white">The Smartest Way To Dress Your Best</h1>
+                            <p style="color:#f7f7f7;" class="super-lead">Let one of our stylists help you find the perfect look for you. <br>All online &amp; completely free.</p>
+                            <!--                            <h3 style="color:#f7f7f7;">Let one of our stylists help you find the perfect look for you. <br>All online &amp; completely free.</h3>-->
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                            
+<!--
+                            <form class="looking-for" style="display:inline-block;">
+		
+                                <select>
+                                    <option value="1" selected><li>I'm looking for...</li></option>
+                                    <option value="2">Outfit</option>
+                                    <option value="3">Shirt</option>
+                                    <option value="4">Pants</option>
+                                    <option value="2">Jeans</option>
+                                    <option value="2">T-shirt</option>
+                                    <option value="2">Shoes</option>
+                                </select>
+								<select>
+                                    <option value="1" selected>Occasion</option>
+                                    <option value="2">Work</option>
+                                    <option value="3">Casual</option>
+                                    <option value="4">Nightout</option>
+                                    <option value="2">Dinner/Date</option>
+                                </select>
+								<select>
+                                    <option value="1" selected>Age range</option>
+                                    <option value="1">16-20</option>
+                                    <option value="2">21-25</option>
+                                    <option value="3">26-30</option>
+                                    <option value="3">31-40</option>
+                                    <option value="3">40+</option>
+                                </select>
+		
+								<input type="submit" class="btn btn-filled" style="padding: 17px;" value="Get recommendations">
+								<div class="form-success">
+									<span class="text-white">Message sent - Thanks for your enquiry</span>
+								</div>
+								<div class="form-error">
+									<span class="text-white">Please complete all fields correctly</span>
+								</div>
+							</form>
+-->
+                            
+                            <form id="nl-form" class="nl-form">
+<!--
+                                <select>
+                                    <option value="1" selected>I'm looking for...</option>
+                                    <option value="2">Outfit</option>
+                                    <option value="3">Shirt</option>
+                                    <option value="4">Pants</option>
+                                    <option value="2">Jeans</option>
+                                    <option value="2">T-shirt</option>
+                                    <option value="2">Shoes</option>
+                                </select>
+-->
+<!--                                for-->
+                                I need an outfit for...
+                                <select>
+                                    <option value="1" selected>Select occasion</option>
+                                    <option value="2">Work</option>
+                                    <option value="3">Casual</option>
+                                    <option value="4">Nightout</option>
+                                    <option value="2">Dinner/Date</option>
+                                </select>
+<!--                                . I'm-->
+                                <select>
+                                    <option value="1" selected>Select age range</option>
+                                    <option value="1">16-20</option>
+                                    <option value="2">21-25</option>
+                                    <option value="3">26-30</option>
+                                    <option value="3">31-40</option>
+                                    <option value="3">40+</option>
+                                </select>
+                                <div class="nl-submit-wrap">
+                                    <a class="btn btn-filled" type="submit" style="padding: 17px; margin-top:1em;">Get recommendations</a>
+                                </div>
+                                <div class="nl-overlay"></div>
+                            </form>
+                            <!--                                    </div>-->
+                        </div>
+                    </div><!-- /container -->
+
+                </div>
+
+            </section>
+
+            <section style="padding-top:60px !important; padding-bottom:60px; !important">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 text-center" style="padding-bottom:15px;">
+                            <h2>Trending Outfits</h2>
+                        </div>
+                    </div><!--end of row-->
+
+                    <div class="row show-on-desktop">
+                        <div class="product-container">
+                            <div class="outfits">
+                                <div class="outfit card trending-outfits">
+                                    <div class="outfit-image">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <!--                                                 style="padding-right:0px;"-->
+                                                <div class="contained-outfit">
+                                                    <a href="#">
+                                                        <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg"></a>
+                                                </div>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Mr Button</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/7/80022_c25a3c3651210dfeaf0d2127797326e7_image1_zoom.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Blackberry's</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Hush Puppies</p>
+                                                            <p class="text-white">$489</p>
+                                                            <!--                                                        <i class="icon icon_cart_alt"></i>-->
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="outfit card trending-outfits">
+                                    <div class="outfit-image">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <!--                                                 style="padding-right:0px;"-->
+                                                <div class="contained-outfit">
+                                                    <a href="#">
+                                                        <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg"></a>
+                                                </div>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Mr Button</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/7/80022_c25a3c3651210dfeaf0d2127797326e7_image1_zoom.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Blackberry's</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Hush Puppies</p>
+                                                            <p class="text-white">$489</p>
+                                                            <!--                                                        <i class="icon icon_cart_alt"></i>-->
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="outfit card trending-outfits">
+                                    <div class="outfit-image">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <!--                                                 style="padding-right:0px;"-->
+                                                <div class="contained-outfit">
+                                                    <a href="#">
+                                                        <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg"></a>
+                                                </div>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Mr Button</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/7/80022_c25a3c3651210dfeaf0d2127797326e7_image1_zoom.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Blackberry's</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Hush Puppies</p>
+                                                            <p class="text-white">$489</p>
+                                                            <!--                                                        <i class="icon icon_cart_alt"></i>-->
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="outfit card trending-outfits">
+                                    <div class="outfit-image">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <!--                                                 style="padding-right:0px;"-->
+                                                <div class="contained-outfit">
+                                                    <a href="#">
+                                                        <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg"></a>
+                                                </div>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Mr Button</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/7/80022_c25a3c3651210dfeaf0d2127797326e7_image1_zoom.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Blackberry's</p>
+                                                            <p class="text-white">$489</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 outfit-component">
+                                                <a href="#">
+                                                    <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg"></a>
+                                                <div class="hover-state text-center">
+                                                    <a href="#" class="vertical-align">
+                                                        <div class="hover-content">
+                                                            <p class="text-white lead">Hush Puppies</p>
+                                                            <p class="text-white">$489</p>
+                                                            <!--                                                        <i class="icon icon_cart_alt"></i>-->
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row show-on-mobile">
+
+                        <div class="outfit">
+                            <div class="wrapper">
+                                <div class="scrolls">
+
+                                    <!--
+<div class="col-xs-3 outfit-caption">
+<h3>Casual</h3>
+</div>
+-->
+                                    <div class="outfit-images-mobile">
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478693056194-WROGN-Men-Blue-Slim-Fit-Mid-Rise-Clean-Look-Jeans-561478693055803-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div style="visibility:hidden;">
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+<div class="row like-dislike-mobile">
+
+<div class="col-xs-12 like-dislike-container">
+<a class="btn like-dislike-btn"><i class="icon icon_heart"></i></a>
+
+<a class="btn like-dislike-btn"><i class="icon icon_close"></i></a>
+</div>
+</div>
+-->
+                        </div>
+
+                        <div class="outfit">
+                            <div class="wrapper">
+                                <div class="scrolls">
+
+                                    <div class="outfit-images-mobile">
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478693056194-WROGN-Men-Blue-Slim-Fit-Mid-Rise-Clean-Look-Jeans-561478693055803-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div style="visibility:hidden;">
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outfit">
+                            <div class="wrapper">
+                                <div class="scrolls">
+
+                                    <div class="outfit-images-mobile">
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478693056194-WROGN-Men-Blue-Slim-Fit-Mid-Rise-Clean-Look-Jeans-561478693055803-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div style="visibility:hidden;">
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outfit">
+                            <div class="wrapper">
+                                <div class="scrolls">
+
+                                    <div class="outfit-images-mobile">
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478767746210-Roadster-Navy--Red-Regular-Fit-Checked-Casual-Shirt-3511478767745875-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11478693056194-WROGN-Men-Blue-Slim-Fit-Mid-Rise-Clean-Look-Jeans-561478693055803-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-xs-3 mobile-product">
+                                            <a href="#">
+                                                <div class="card-mobile">
+                                                    <div class="product">
+                                                        <div>
+                                                            <img alt="Product Image" src="img/sample-product-images/1/11452149915389-Bata-Men-Casual-Shoes-4891452149914971-1.jpg">
+
+                                                        </div>
+                                                        <div class="col-xs-12 card-details-mobile">
+                                                            <div class="col-xs-8 brand-name-container"><p class="brand-name">U.S. Polo Assn.</p></div>
+                                                            <div class="col-xs-4 product-price"><p>₹1799</p></div>
+                                                        </div>
+                                                    </div><!--end of inidividual product-->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div style="visibility:hidden;">
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                            <img src="http://placehold.it/50x50" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!--end of row-->
+            </section>
+
+            <!--
+<section>
+<div class="container text-center">
+<div class="row">
+<h5 class="alt-font">How it works</h5>
+<div class="col-md-4">
+<img src="img/empty-search.svg" width="100px" style="margin-bottom:10px;">
+<h5>Tell us what you’re looking for - complete outfits or a single piece.</h5>
+</div>
+<div class="col-md-4">
+<img src="img/suit.svg" width="100px" style="margin-bottom:10px;">
+<h5>Up your style game with our personalised recommendations.</h5>
+</div>
+<div class="col-md-4">
+<img src="img/light-bulb.svg" width="100px" style="margin-bottom:10px;">
+<h5>Need something more special? Sign up and ask your personal stylist.</h5>
+</div>
+</div>
+</div>
+</section>
+-->
+
+            <section style="background-image:url('img/banner-romil-jain.png'); background-size:cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-7">
+                            <div>
+                                <!--                                <div class="detail-line"></div>-->
+                                <h2 class="text-hite">Romil Jain</h2>
+                                <h5 class="text-hite">Founder and Stylist at Gent Club</h5>
+                            </div>
+                            <p class="text-hite super-lead">
+                                "I’m not here to change anyone, I’m here to help guys zero in on their style and save a ton of time.
+                            </p><p class="text-hite">
+                            We are bringing together Human stylists and smart algorithms with a plan to bring personal styling service within the reach of every Indian man and make it easy for them to dress well."
+                            </p>
+                        </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+
+            </section>
+
+            <!--
+<section class="no-pad">
+<div class="col-md-6 feature-box">
+<div class="background-image-holder">
+<img alt="Slide Background" class="background-image" src="img/shop1.jpg">
+</div>
+
+<div class="content">
+<h3 class="text-white">Save up big on<br> this season's looks</h3>
+<p class="text-white">Up to 50% off our summer catalogue.</p>
+<a class="btn btn-white btn-sm" href="#">Shop Now</a>
+</div>
+</div>
+
+<div class="col-md-6 feature-box">
+<div class="background-image-holder overlay-light-gradient">
+<img alt="Slide Background" class="background-image" src="img/shop3.jpg">
+</div>
+
+<div class="content">
+<h3>Don't miss out on our<br> final winter markdowns</h3>
+<p>Shop our chic, flexible workwear looks.</p>
+<a class="btn btn-sm" href="#">Shop Now</a>
+</div>
+</div>
+</section>
+-->
+
+
+
+            <section class="blog-snippets-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-block">
+                                <div class="detail-line"></div>
+                                <h5>Latest from the blog</h5>
+                                <h4>Style tips, lookbooks, and more.</h4>
+                            </div>
+                        </div>
+                    </div><!--end of row-->
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-snippet-1 card">
+                                <span class="date alt-font uppercase">November 6th 2014</span>
+                                <h5>The ultimate guide on how to<br> build your own website.</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <a class="text-link" href="#">Read the rest<i class="icon arrow_right"></i></a>
+                            </div>
+                        </div><!--end of individual blog snippet-->
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-snippet-1 card">
+                                <span class="date alt-font uppercase">October 31st 2014</span>
+                                <h5>An interesting new way to handle<br> vertical media queries.</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <a class="text-link" href="#">Read the rest<i class="icon arrow_right"></i></a>
+                            </div>
+                        </div><!--end of individual blog snippet-->
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-snippet-1 image-snippet overlay card">
+
+                                <div class="background-image-holder">
+                                    <img alt="Slide Background" class="background-image" src="img/blog-square1.jpg">
+                                </div>
+
+                                <span class="date alt-font uppercase">October 3rd 2014</span>
+                                <h5>Why getting away from the screen<br> is as good as a holiday.</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <a class="text-link" href="#">Read the rest<i class="icon arrow_right"></i></a>
+                            </div>
+                        </div><!--end of individual blog snippet-->
+                    </div><!--end of row-->
+
+                    <div class="container text-center" style="padding-top:3em;">
+                            <a class="btn btn-theme" href="#" style="padding:17px;">Visit the blog</a>
+                    </div>
+                </div><!--end of container-->
+            </section>
+
+            <section style="background-color:#666;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+                            <h2 class="text-white">CTA heading.</h2>
+                            <p class="text-white">
+                                CTA subheading
+                            </p>
+                            <a class="btn btn-white btn-filled" href="#" style="padding:17px;">Get your personal stylist</a>
+                        </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+            </section>
+            <footer class="footer-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-sm-6">
+                            <a href="#">
+                                <img alt="logo" src="img/logo-square-light.png" style="width: 60px; padding-bottom: 30px;">
+                            </a>
+                            <p>
+                                Poddar Chambers,<br>
+                                Mathuradas Mill Compound,<br>
+                                Senapati Bapat Marg, Lower Parel,<br>
+                                Mumbai - 400013
+                            </p>
+                            <p>
+                                P: +91 97690 60467<br>
+                                E: hello@gentclub.in
+                            </p>
+                        </div>
+
+                        <!--
+<div class="col-md-4 col-sm-6">
+<h5>Twitter</h5>
+<div class="twitter-feed">
+<div class="tweets-feed" data-widget-id="492085717044981760">
+
+</div>
+</div>
+</div>
+-->
+
+                        <div class="col-md-2 col-md-offset-1 col-sm-12">
+                            <h5>Navigate</h5>
+                            <ul class="link-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Looks</a></li>
+                                <li><a href="#">Style Blog</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!--end of row-->
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="footer-lower">
+                                <span>© Copyright 2016 Gent Club, All Rights Reserved</span>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="icon social_facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon social_instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end of row-->
+
+                </div><!--end of container-->
+            </footer>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/nlform.js"></script>
+        <script>
+            var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+        </script>
+    </body>
+</html>
