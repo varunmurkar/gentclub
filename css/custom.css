@@ -19,15 +19,17 @@ h3 {
 
 .cards-container {
     background-color: #f7f7f7 !important;
+    padding-top: 1.5em;
 }
 
 .card {
+    background: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     /*    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     /*    box-shadow: 0px 0px 10px 2px #888888; */
     margin:15px 15px 0 15px;
-        border-radius: 2px;
+    border-radius: 2px;
 }
 .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -38,7 +40,7 @@ h3 {
 .outfit {
     background:#fff; 
     /*    background:#EFEFEF; */
-    box-shadow: 1px 1px 10px #999;
+/*    box-shadow: 1px 1px 10px #999;*/
     margin-bottom: 30px;
 }
 
@@ -133,17 +135,16 @@ vertical-align:top;
 }
 
 .card-details-mobile {
-    padding:10px !important; 
-    font-size:0.1em !important;
+    padding: 0.8em 1.1em !important; 
 }
 
 /*
 .brand-name {
-    text-align: left;
-    width: 50%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+text-align: left;
+width: 50%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 */
 
@@ -154,9 +155,9 @@ vertical-align:top;
 .brand-name {
     text-align: left;
     width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-price {
@@ -207,7 +208,7 @@ vertical-align:top;
 // --------------------------------------------------*/
 .outfits {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-flow: row wrap;
 }
 
@@ -221,7 +222,7 @@ vertical-align:top;
 .outfit:last-child:not(.cta-card):not(.trending-outfits) {
     position: relative;
     overflow: hidden;
-    flex-basis: 50%;
+    flex-basis: 47.5%;
     flex-grow: 0;
     align-self: flex-start
 }
@@ -501,27 +502,29 @@ margin: 14px auto 14px auto;
 }
 
 /*!
-// Outfits
+// Products
 // --------------------------------------------------*/
-/*
 .products {
-display: flex;
-justify-content: center;
-flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
-*/
 
 .product-single {
+    padding: 0;
+    margin-bottom: 1em;
     display: inline-block;
     flex-basis: 22%;
     flex-grow: 1;
     /*    flex-shrink: 1;*/
 }
 
+/*
 .product-single:last-child {
     flex-grow: 0;
     flex-basis: 45%;
 }
+*/
 
 /*
 @media (min-width: 960px) and (max-width: 1600px) {
@@ -562,6 +565,7 @@ flex-basis: 22.5%;
     }
     .second-filter {
         padding-top: 0.5em;
+        margin-bottom: 0;
     }
 }
 @media (min-width: 440px) and (max-width: 960px) {
