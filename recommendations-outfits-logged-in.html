@@ -15,6 +15,13 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,700,400italic,500%7CMontserrat:400,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/nlform.css" />
         <script src="js/modernizr.custom.js"></script>
+        <!--
+<script type="text/javascript">
+$(document).ready(function () {
+$('#stylistIntro').modal('show');
+});
+</script>
+-->
     </head>
     <body>
 
@@ -52,15 +59,15 @@
         </div>
 
         <div class="main-container">
-            
+
             <section class="narrow">
                 <div class="row text-center" style="padding-bottom:20px;">
                     <div class="col-md-12">
                         <a class="btn btn-filled" href="#">Outfits</a>
                         <a class="btn" href="#">Products</a>
-<!--
-                        <button class="btn selected" href="#">Outfits</button>
-                        <button class="btn" href="#">Products</button>
+                        <!--
+<button class="btn selected" href="#">Outfits</button>
+<button class="btn" href="#">Products</button>
 -->
                     </div>
                 </div>
@@ -206,7 +213,7 @@
             <section class="cards-container" style="border-top:1px solid #ddd; padding-bottom:20px; padding-top:50px;">
 
                 <div class="container">
-<div class="row show-on-desktop">
+                    <div class="row show-on-desktop">
                         <div class="product-container">
                             <div class="outfits">
                                 <div class="outfit card">
@@ -255,22 +262,22 @@
                                         </div>
                                     </div>
 
-<!--
-                                    <div class="row like-dislike-desktop">
+                                    <!--
+<div class="row like-dislike-desktop">
 
-                                        <div id="like-dislike" class="col-xs-12 like-dislike-container">
-                                            <button class="btn btn-default like"><i class="icon icon_heart"></i></button>
-                                            <button class="btn btn-default dislike"><i class="icon icon_close"></i></button>
-                                        </div>
-                                        
+<div id="like-dislike" class="col-xs-12 like-dislike-container">
+<button class="btn btn-default like"><i class="icon icon_heart"></i></button>
+<button class="btn btn-default dislike"><i class="icon icon_close"></i></button>
+</div>
+
 
 <div class="col-xs-12 like-dislike-container">
 <a class="btn like-dislike-btn"><i class="icon icon_heart"></i></a>
 <a class="btn like-dislike-btn"><i class="icon icon_close"></i></a>
 </div>
 
-                                    </div>
-                                    
+</div>
+
 <div class="row like-dislike">
 <div class="col-md-6 col-xs-6">
 <a class="btn" style="width:100%;"><i class="icon icon_heart"></i></a>
@@ -865,13 +872,13 @@
                                     </div>
                                 </div>
                             </div>
-<!--
-                            <div class="row like-dislike-mobile">
-                                <div id="like-dislike" class="col-xs-12 like-dislike-container">
-                                    <button class="btn like btn-danger"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like <span class="likes">0</span></button>
-                                    <button class="btn dislike btn-warning"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Dislike <span class="dislikes">0</span></button>
-                                </div>
-                            </div>
+                            <!--
+<div class="row like-dislike-mobile">
+<div id="like-dislike" class="col-xs-12 like-dislike-container">
+<button class="btn like btn-danger"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like <span class="likes">0</span></button>
+<button class="btn dislike btn-warning"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Dislike <span class="dislikes">0</span></button>
+</div>
+</div>
 -->
                         </div>
 
@@ -933,6 +940,54 @@
             </footer>
         </div>
 
+        <div class="modal fade" id="stylistIntro" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content stylistIntro">
+                    <div class="modal-header" style="border-bottom:none;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title" id="memberModalLabel">Thanks for signing up!</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="img/avatar.png" style="float:right;">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h3 class="text-">Hey Romil.</h3>
+                                    <p class="super-lead">I'm Kunal, your personal stylist.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" style="padding-top:1em;">
+                                    <p>To give you better recommendations, I need to know the age range you're shopping for.</p>
+                                <form id="nl-form" class="nl-form dark text-center">
+
+                                <select style="color:#333 !important;">
+                                    <option value="1" selected>Select age range</option>
+                                    <option value="1">16-20</option>
+                                    <option value="2">21-25</option>
+                                    <option value="3">26-30</option>
+                                    <option value="3">31-40</option>
+                                    <option value="3">40+</option>
+                                </select>
+                                <div class="nl-submit-wrap">
+                                    <a class="btn" type="submit" style="padding: 17px; margin-top:1em;">Get recommendations</a>
+                                </div>
+                                <div class="nl-overlay"></div>
+                            </form>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
         <script src="js/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -952,5 +1007,10 @@
         <script>
             var nlform = new NLForm( document.getElementById( 'nl-form' ) );
         </script>
+
+        <script type="text/javascript">
+            $('#stylistIntro').modal('show');
+        </script>
+
     </body>
 </html>

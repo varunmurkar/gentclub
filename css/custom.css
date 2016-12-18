@@ -756,3 +756,8 @@ button.selected{
     border-color: transparent;
     color: white;
 }
+
+.stylistIntro {
+    border-radius: 2px !important;
+    padding: 1em;
+}

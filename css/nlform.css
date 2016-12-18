@@ -84,6 +84,20 @@
   -moz-transition: all 0.3s ease-in-out;
 }
 
+.dark .nl-field-toggle  {
+    min-height: 57px;
+    padding: 0.1em 1em;
+	line-height: inherit;
+	display: inline-block;
+	color: #333;
+    font-weight: 300;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
 /* drop-down list / text element */
 .nl-field ul {
 	position: absolute;
