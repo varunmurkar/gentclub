@@ -732,9 +732,9 @@ p.filter-item span::before {
     white-space: nowrap;
 }
 
-button.selected{
+button.selected {
     background-color: #333;
-    color: #fff !important;
+/*    color: #fff !important;*/
 }
 
 .filter-toggle {
@@ -747,8 +747,9 @@ button.selected{
 
 .filter-toggle-active {
     background: transparent !important;
-    border: 2px red solid;
-    color: inherit !important;
+    border-bottom: 3px #333 solid;
+    color: inherit;
+    box-sizing: border-box;
 }
 
 .btn-default.active, .btn-default:active, .btn-default:focus, .btn-default:hover, .open .dropdown-toggle.btn-default {
