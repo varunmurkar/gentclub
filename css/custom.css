@@ -639,6 +639,12 @@ flex-basis: 22.5%;
     font-size:1.5em;
 }
 
+/*
+.filter-icons {
+    display: inline-flex;
+}
+*/
+
 .filter-icons i {
     font-size: 2em;
     padding: 0 1em 0 1em;
